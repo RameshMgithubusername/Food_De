@@ -1,0 +1,70 @@
+/* Header Styling */
+.header {
+    height: 38vw; /* Increased height for more vertical space */
+    margin: 20px; /* Reduced margin */
+    background: url('/header_img.png') no-repeat center center;
+    background-size: cover; /* Make sure the image covers the entire background */
+    position: relative;
+}
+
+/* Content Inside the Header */
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw; /* Reduced gap for more compact content */
+    max-width: 60%; /* Adjusted max-width */
+    bottom: 10%; /* Increased bottom space */
+    left: 50%; /* Centered content horizontally */
+    transform: translateX(-50%); /* Center the content */
+    text-align: center; /* Center text */
+    animation: fadeIn 2s; /* Slightly faster animation */
+}
+
+/* Heading Inside Header */
+.header-contents h2 {
+    font-weight: 600; /* Slightly bolder */
+    color: white;
+    font-size: max(5vw, 20px); /* Larger text size for heading */
+    margin: 0; /* Removed default margin */
+}
+
+/* Paragraph Inside Header */
+.header-contents p {
+    color: white;
+    font-size: 1.2vw; /* Slightly larger font size */
+}
+
+/* Button Inside Header */
+.header-contents button {
+    border: none;
+    color: #ffffff; /* Changed to white text */
+    font-weight: 600; /* Slightly bolder font weight */
+    padding: 1.2vw 3vw; /* Increased padding for larger button */
+    background-color: #ff5722; /* Changed button color to match the image theme */
+    font-size: max(1.2vw, 14px); /* Slightly larger font size */
+    border-radius: 25px; /* Reduced border-radius */
+    cursor: pointer; /* Added cursor pointer */
+}
+
+/* Responsive Adjustments for Medium Screens */
+@media (max-width: 1050px) {
+    .header-contents {
+        max-width: 50%;
+        top: 2%; /* Adjusted bottom space */
+    }
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 750px) {
+    .header-contents {
+        max-width: 75%;
+    }
+    .header-contents p {
+        font-size: 1.5vw; /* Increased font size */
+    }
+    .header-contents button {
+        padding: .5vw 4vw; /* Increased padding */
+    }
+}

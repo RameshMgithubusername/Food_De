@@ -1,0 +1,120 @@
+/* Navbar Styles */
+.navbar {
+    padding: 15px 0; /* Reduced padding for mobile */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+/* Logo styles */
+.navbar .logo {
+    width: 140px; /* Adjusted width */
+}
+
+/* Navbar menu styles */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px; /* Slightly smaller font size for better fit on mobile */
+}
+
+/* Navbar right section styles */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Reduced gap for mobile */
+}
+
+/* Button styles */
+.navbar button {
+    background: transparent;
+    font-size: 14px; /* Reduced font size */
+    color: #49557e;
+    border: 1px solid red;
+    padding: 8px 25px; /* Adjusted padding */
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover styles */
+.navbar button:hover {
+    background-color: #fff4f2;
+}
+
+/* Active link styles */
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+/* List item styles */
+.navbar li {
+    cursor: pointer;
+}
+
+/* Search icon container styles */
+.navbar-search-icon {
+    position: relative;
+}
+
+/* Dot notification styles */
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 50%; /* Changed to 50% for a perfect circle */
+    top: -8px;
+    right: -8px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 120px; /* Further reduced logo size */
+    }
+    .navbar-menu {
+        gap: 15px; /* Narrowed gap */
+        font-size: 16px; /* Adjusted font size */
+    }
+    .navbar-right {
+        gap: 20px; /* Reduced gap */
+    }
+    .navbar-right img {
+        width: 20px; /* Adjusted icon size */
+    }
+    .navbar-right button {
+        padding: 7px 20px; /* Reduced padding */
+        font-size: 14px; /* Consistent font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        width: 110px; /* Further reduced logo size */
+    }
+    .navbar-menu {
+        gap: 10px; /* Narrowed gap */
+        font-size: 14px; /* Adjusted font size */
+    }
+    .navbar-right {
+        gap: 15px; /* Reduced gap */
+    }
+    .navbar-right img {
+        width: 18px; /* Adjusted icon size */
+    }
+    .navbar-right button {
+        padding: 6px 18px; /* Reduced padding */
+        font-size: 13px; /* Further reduced font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-menu {
+        display: none; 
+    }
+}
